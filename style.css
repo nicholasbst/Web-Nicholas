@@ -91,6 +91,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  z-index: -10;
   background-image: url("header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +190,7 @@ body {
 .about .row .content .cta {
   margin-top: 1rem;
   display: inline-block;
-  padding: 1 rem 3 rem;
+  padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #fff;
   background-color: var(--primary);
@@ -218,9 +219,15 @@ body {
   line-height: 1.6;
 }
 
-.mypro .row {
+.mypro .row1 {
   display: flex;
   margin-top: 3rem;
+  justify-content: center;
+}
+
+.mypro .row2 {
+  display: flex;
+  margin-top: 0.5rem;
   justify-content: center;
 }
 
@@ -229,16 +236,37 @@ body {
   padding-bottom: 4rem;
 }
 
-.mypro .row .mypro-card img {
-  width: 60%;
+.mypro .row1 .mypro-card-image1 {
+  width: 50%;
+}
+.mypro .row1 .mypro-card-image2 {
+  width: 75%;
+}
+.mypro .row1 .mypro-card-image3 {
+  width: 46%;
+}
+.mypro .row2 .mypro-card-image4 {
+  width: 40%;
+}
+.mypro .row2 .mypro-card-image5 {
+  width: 40%;
 }
 
-.mypro .row .mypro-card .mypro-card-title a {
+.mypro .row1 .mypro-card .mypro-card-title a {
   margin: 1rem auto 0.5rem;
   color: #fff;
 }
 
-.mypro .row .mypro-card .mypro-card-title a:hover {
+.mypro .row2 .mypro-card .mypro-card-title a {
+  margin: 1rem auto 0.5rem;
+  color: #fff;
+}
+
+.mypro .row1 .mypro-card .mypro-card-title a:hover {
+  color: var(--primary);
+}
+
+.mypro .row2 .mypro-card .mypro-card-title a:hover {
   color: var(--primary);
 }
 
